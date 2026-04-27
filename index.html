@@ -2,23 +2,124 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FlyttGo Relocation Marketplace USA</title>
-    <meta name="description" content="Relocation coordination marketplace connecting customers with licensed movers, relocation crews, storage providers, and packing services across the United States." />
-    <meta name="keywords" content="United States relocation marketplace, interstate moving coordination, moving labor marketplace USA, relocation services coordination platform" />
-    <link rel="icon" type="image/svg+xml" href="/placeholder.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#1A365D" />
 
-    <meta property="og:title" content="FlyttGo Relocation Marketplace USA" />
-    <meta property="og:description" content="Relocation coordination marketplace connecting customers with licensed movers, relocation crews, storage providers, and packing services across the United States." />
+    <title>Global Relocation USA — Nationwide Relocation Coordination Marketplace</title>
+    <meta name="description" content="Global Relocation USA is a nationwide relocation coordination marketplace connecting customers with licensed movers, relocation crews, storage providers, and packing services across the United States." />
+    <meta name="keywords" content="United States relocation marketplace, interstate moving coordination, moving labor marketplace USA, relocation services coordination platform, FMCSA carrier verification, USDOT registered movers, global relocation usa" />
+    <link rel="canonical" href="https://globalrelocationusa.com/" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Leaflet (used by DeliveryMap for real-time delivery tracking).
+         Loaded via CDN so Leaflet itself doesn't bloat the JS bundle;
+         the component reads `L` from the global scope. -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin="" defer></script>
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="/og.jpg" />
+    <meta property="og:site_name" content="Global Relocation USA" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://globalrelocationusa.com/" />
+    <meta property="og:title" content="Global Relocation USA — Nationwide Relocation Coordination Marketplace" />
+    <meta property="og:description" content="Nationwide relocation coordination marketplace connecting customers with licensed movers, relocation crews, storage providers, and packing services across the United States." />
+    <meta property="og:image" content="https://globalrelocationusa.com/og.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Global Relocation USA — nationwide relocation coordination marketplace" />
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="FlyttGo Relocation Marketplace USA" />
-    <meta name="twitter:description" content="Relocation coordination marketplace connecting customers with licensed movers, relocation crews, storage providers, and packing services across the United States." />
-    <meta name="twitter:image" content="/og.jpg" />
-  </head>
+    <meta name="twitter:title" content="Global Relocation USA" />
+    <meta name="twitter:description" content="Nationwide relocation coordination marketplace connecting customers with licensed movers, relocation crews, storage providers, and packing services across the United States." />
+    <meta name="twitter:image" content="https://globalrelocationusa.com/og.svg" />
+    <meta name="twitter:image:alt" content="Global Relocation USA" />
 
+    <!-- JSON-LD: Organization (Marketplace platform operator) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://globalrelocationusa.com/#organization",
+      "name": "Global Relocation USA",
+      "alternateName": "Global Relocation",
+      "description": "Digital relocation coordination marketplace connecting customers with licensed moving providers, relocation crews, storage networks, packing services, truck rental partners, and insurance options across the United States.",
+      "url": "https://globalrelocationusa.com/",
+      "logo": "https://globalrelocationusa.com/apple-touch-icon.svg",
+      "image": "https://globalrelocationusa.com/og.svg",
+      "email": "support@globalrelocationusa.com",
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "knowsAbout": [
+        "Relocation coordination",
+        "Licensed motor carrier matching",
+        "Moving labor marketplace",
+        "Self-storage integration",
+        "Truck rental coordination",
+        "Packing services coordination",
+        "FMCSA-aware verification"
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://globalrelocationusa.com/#website",
+      "url": "https://globalrelocationusa.com/",
+      "name": "Global Relocation USA",
+      "publisher": { "@id": "https://globalrelocationusa.com/#organization" },
+      "inLanguage": ["en-US"]
+    }
+    </script>
+
+    <!-- JSON-LD: Service catalog (marketplace coordination categories) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Relocation coordination marketplace",
+      "provider": { "@id": "https://globalrelocationusa.com/#organization" },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Global Relocation USA marketplace categories",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Labor-only move support" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Licensed carrier matching" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Truck rental coordination" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Packing services" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Temporary storage integration" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Insurance options selection" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corporate relocation workflows" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "University relocation support" } }
+        ]
+      }
+    }
+    </script>
+
+    <!-- Scroll precision fix for sticky header offset -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 120px;
+      }
+    </style>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

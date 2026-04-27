@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#1A365D"/>
+  <path fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+        d="M37 44V18a2 2 0 0 0-2-2H14a2 2 0 0 0-2 2v26l5-2 5 2 5-2 5 2 5-2zm0 0l5 2 5-2 5 2V18a2 2 0 0 0-2-2H39"/>
+  <text x="32" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="9" font-weight="700" fill="white" text-anchor="middle">USA</text>
+</svg>
